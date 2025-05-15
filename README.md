@@ -3,8 +3,7 @@
 This project is a simple REST API built using FastAPI that performs sentiment analysis on input text using TextBlob.  
 
 ## Features
-
-- Health check endpoint (`GET /`)  
+ 
 - Sentiment analysis endpoint (`POST /analyze`) that returns sentiment (positive/negative/neutral) and polarity score  
 
 ## Project Structure
@@ -25,41 +24,47 @@ This project is a simple REST API built using FastAPI that performs sentiment an
 
 1. **Clone the repository**
 
+        git clone https://github.com/zyavhed5526/sentiment-analyzer-fastapi.git
 
-git clone https://github.com/zyavhed5526/sentiment-analyzer-fastapi.git
-
-cd sentiment-analyzer-fastapi
+        cd sentiment-analyzer-fastapi
 
 2. **Create a virtual environment**
-python3 -m venv venv
+
+        python3 -m venv venv
 
 3. **Activate the virtual environment**
-source venv/bin/activate
+
+        source venv/bin/activate
 
 4. **Install dependencies**
-pip install -r requirements.txt
+
+        pip install -r requirements.txt
 
 5. **Run the FastAPI app**
-uvicorn main:app --reload
-The API will be available at http://127.0.0.1:8000/
+
+        uvicorn main:app --reload
+
+        The API will be available at http://127.0.0.1:8000/
 
 6. **Test the API**
-Open a browser and visit http://127.0.0.1:8000/docs to access the automatic interactive API docs (Swagger UI).
 
-Try the /analyze POST endpoint by entering text and see sentiment analysis in action.
+        Open a browser and visit http://127.0.0.1:8000/docs to
+         access the automatic interactive API docs (Swagger UI).
+
+        Try the /analyze POST endpoint by entering text and see sentiment analysis in action.
 
 7. **Running with Docker (optional)**
 
-Make sure Docker is installed and running.
+        Make sure Docker is installed and running.
 
-Build Docker image
-
-
-docker build -t sentiment-api .
-Run Docker container
+        Build Docker image
 
 
-docker run -p 8000:8000 sentiment-api
-Access the API
+        docker build -t sentiment-api .
+        Run Docker container
 
-Go to http://localhost:8000/docs in your browser.
+
+        docker run -p 8000:8000 sentiment-api
+        Access the API
+
+        Go to http://localhost:8000/docs in your browser.
