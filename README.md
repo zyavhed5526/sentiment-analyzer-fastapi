@@ -26,7 +26,8 @@ This project is a simple REST API built using FastAPI that performs sentiment an
 1. **Clone the repository**
 
 
-git clone https://github.com/yourusername/sentiment-analyzer-fastapi.git
+git clone https://github.com/zyavhed5526/sentiment-analyzer-fastapi.git
+
 cd sentiment-analyzer-fastapi
 
 2. **Create a virtual environment**
